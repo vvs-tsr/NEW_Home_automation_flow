@@ -1,0 +1,16 @@
+┌─────┬─────────────────────────────┬─────────────────────────────────────────────────────────────┬─────────────────────────────────────────────────────────────┬────────────┐
+│  #  │ Tool Name                   │ Example LLM call                                            │ Real-world use in your house                                │ Difficulty │
+├─────┼─────────────────────────────┼─────────────────────────────────────────────────────────────┼─────────────────────────────────────────────────────────────┼────────────┤
+│ 1   │ control_device              │ topic=home/light/bedroom/set, payload=ON                    │ Lights, fans, relays, Sonoff/Tuya switches, ESP relays      │ ★☆☆        │
+│ 2   │ speak                       │ text=Sir, the front door is open                            │ Jarvis speaks directly on Echo-Bud (bypasses extra STT)    │ ★☆☆        │
+│ 3   │ get_daily_summary           │ (no args)                                                   │ “Package arrived 14:20, motion in hallway twice after 10pm” │ ★☆☆        │
+│ 4   │ get_sensor_status           │ entity=bedroom_temp or livingroom_lux                       │ Live LDR, BME680, Zigbee temp/humidity, power meters        │ ★☆☆        │
+│ 5   │ get_camera_report           │ camera=front_door                                           │ Latest YOLO: “1 person, no package, motion 2 min ago”      │ ★★☆        │
+│ 6   │ list_available_devices      │ domain=light (optional)                                     │ LLM asks “what lights do I have?” before acting            │ ★★☆        │
+│ 7   │ activate_routine            │ name=good_night or movie_mode                               │ One command turns off lights, closes curtains, says …      │ ★☆☆        │
+│ 8   │ query_past_events           │ keywords=package OR delivery, hours=24                      │ “When was the last time the vacuum finished?”              │ ★★☆        │
+│ 9   │ get_energy_usage            │ (no args or room-specific)                                  │ “Living room lights used 2.3 kWh today”                    │ ★★☆        │
+│ 10  │ confirm_action              │ action=turn_off_all_lights                                  │ Forces voice confirmation for risky commands               │ ★★☆        │
+│ 11  │ vacuum_control              │ command=start, room=livingroom                              │ If you add Roborock or any MQTT vacuum later               │ ★★☆        │
+│ 12  │ alert_all_phones            │ message=Someone at front door!                              │ Publish to HA notification service or MQTT topic for phone │ ★★☆        │
+└─────┴─────────────────────────────┴─────────────────────────────────────────────────────────────┴─────────────────────────────────────────────────────────────┴────────────┘

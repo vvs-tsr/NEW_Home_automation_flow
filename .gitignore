@@ -1,0 +1,43 @@
+# ── Secrets — NEVER commit ────────────────────────────────────────────────────
+.env
+old manual files/rough_architecture.txt
+
+# ── Python ────────────────────────────────────────────────────────────────────
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# ── Database ──────────────────────────────────────────────────────────────────
+*.db
+*.sqlite
+*.sqlite3
+
+# ── Voice models (large binary files) ────────────────────────────────────────
+*.onnx
+*.onnx.json
+main files/voices/
+old manual files/voices/
+
+# ── Captured audio (generated at runtime) ────────────────────────────────────
+captures/
+tts_test_output/
+*.wav
+
+# ── Firmware build artefacts ─────────────────────────────────────────────────
+firmware/echobud/build/
+main files/firmware_esp/build/
+
+# ── Firmware secrets (WiFi creds) ─────────────────────────────────────────────
+firmware/echobud/secrets.h
+main files/firmware_esp/secrets.h
+
+# ── Misc ──────────────────────────────────────────────────────────────────────
+config_files/
+.DS_Store
+Thumbs.db
+.claude/

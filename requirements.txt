@@ -1,0 +1,28 @@
+# requirements.txt
+# Install with: pip install -r requirements.txt
+
+# ── Environment & config ──────────────────────────────────────────────────────
+python-dotenv
+
+# ── LLM ──────────────────────────────────────────────────────────────────────
+groq
+
+# ── Speech-to-text ────────────────────────────────────────────────────────────
+faster-whisper
+
+# ── Text-to-speech ────────────────────────────────────────────────────────────
+piper-tts
+
+# ── MQTT ──────────────────────────────────────────────────────────────────────
+paho-mqtt
+
+# ── Computer vision ───────────────────────────────────────────────────────────
+ultralytics
+opencv-python
+torch
+flask
+
+# ── Audio processing ──────────────────────────────────────────────────────────
+soundfile
+librosa
+numpy
