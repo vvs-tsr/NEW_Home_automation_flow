@@ -7,8 +7,8 @@ from google.genai import types
 
 # -----------------------------
 # CONFIG
-# -----------------------------
-GEMINI_API_KEY = "AIzaSyA_IB3tkmpbFL-tf05DY0RhM4yxByVt4a0"
+# ---------------'--------------
+GEMINI_API_KEY = "Your_GEMINI_API_KEY"
 SHOW_PREVIEW = True          # ← Set to False when you don't want to see the raw events anymore
 PREVIEW_LIMIT = 25           # How many events to show in preview (avoid flooding terminal)
 
